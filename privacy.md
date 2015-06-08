@@ -48,13 +48,15 @@ While I'm not terribly ashamed of this list, it's eye opening to realize that ev
 
 I don't mind search engine companies collecting user data and using it to deliver targeted ads. I may even *want* to see an ad for a new model of an oscilloscope or a promotional offer on domain names. If it stopped there everything would be okay.
 
-The real problem with all of this tracking comes with how the data is handled afterward. Google's [privacy policy ](http://www.google.com/policies/privacy/) says nothing about how long they keep user data, and has some very interesting points about how they share it. [For one, Google regularly responds to requests from courts to share user data][1]. This is to be expected, but once again, is something that users need to be aware of. More interesting is 
+The real problem with all of this tracking comes with how the data is handled afterward. Google's [privacy policy](http://www.google.com/policies/privacy/) says nothing about how long they keep user data and [Google regularly responds to requests from courts to share user data](http://www.google.com/transparencyreport/userdatarequests/). This is to be expected, but once again, users should be aware of it.
 
 
-HTTP Headers
-------------
+Steps You Can Take
+------------------
 
-The HTTP/1.1 specification (which you have used to reach this page) lists variety of information that is to be sent from your browser to the server that it is connecting to.
-
-
-[1]: http://www.google.com/transparencyreport/userdatarequests/
+- duck duck go
+- do not track header
+- turn location data off
+- ask search engines not to store your data
+- use a proxy 
+- control which headers your browser sends 
