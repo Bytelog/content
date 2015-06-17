@@ -24,3 +24,10 @@
 ### Problems With the Computer Engineering Degree at CSUSB
 
 ### Thoughts on Rust
+
+
+
+
+Fonts thoughts  
+https://blog.algolia.com/when-solid-state-drives-are-not-that-solid/
+
