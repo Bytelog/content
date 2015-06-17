@@ -9,7 +9,7 @@ Information You've Given Me
 IP Address: {{ ip }}
 Web Browser: {{ browser }}
 Operating System: {{ os }}
-Last Site Visited: {{ referer }}
+Referred By: {{ referer }}
 Cookies: {{ cookies }}
 Geolocation: {{ location }}
 ```
