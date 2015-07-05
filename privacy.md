@@ -1,3 +1,6 @@
+Your Privacy
+============
+
 Too many internet users take their online privacy for granted. Even developers, I have found, often have very little knowledge of just how much information about themselves is leaked to the websites that they visit.
 
 In an attempt to remedy this in some small way, I've created this page to demonstrate just a few of the things that I believe *you* should be aware of.
@@ -21,7 +24,7 @@ Google Tracks You
 ------------------
 Beyond the information your browser sends to servers, advertising companies do their best to profile users by putting tracking scripts into the ads they place on a variety of sites. They do this so that they can serve content more relevant to you, increasing the likelyhood that you'll click on the ad and thereby increasing their revenue. Do you have a Google account? [Check out your profile](https://www.google.com/settings/ads/onweb/).
 
-Here's what Google has to say about me: 
+Here's what Google has to say about me:
 ```
 Age: 18-24
 Gender: Male
@@ -44,7 +47,7 @@ Interests:
     Writer's Resources
 ```
 
-While I'm not terribly ashamed of this list, it's eye opening to realize that every single search you make is logged and analyzed. 
+While I'm not terribly ashamed of this list, it's eye opening to realize that every single search you make is logged and analyzed.
 
 I don't mind search engine companies collecting user data and using it to deliver targeted ads. I may even *want* to see an ad for a new model of an oscilloscope or a promotional offer on domain names. If it stopped there everything would be okay.
 
@@ -58,5 +61,5 @@ Steps You Can Take
 - do not track header
 - turn location data off
 - ask search engines not to store your data
-- use a proxy 
-- control which headers your browser sends 
+- use a proxy
+- control which headers your browser sends

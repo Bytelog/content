@@ -1,7 +1,12 @@
+[title] Test Article
+[description] This is a really cool test article!
+[abstract] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. *Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit*. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
+[date] 4 July, 2015
+
 Title of the Article
 ====================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. *Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit*. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. *Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit*. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
 
 
 This is an Article Section Heading
@@ -9,8 +14,7 @@ This is an Article Section Heading
 
 Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. **Curabitur** dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
 
-This is an Article Section Heading
-----------------------------------
+### An H3 Heading!
 
 Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi.
 
@@ -20,7 +24,12 @@ Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, 
 - Testing lists!
 
 And, some code for those interested:
-```c
+```clike
+
+# this is 80 characters from the first # to the last ..........................#
+# this is 120 characters from the first # to the last ................................................................ #
+using namespace std;
+
 #include "lwan.h"
 #include "lwan-template.h"
 #include "lwan-serve-files.h"
@@ -83,7 +92,7 @@ int main(void)
 
 Some Reference Links
 --------------------
-[google](google.com)  
-[yahoo](yahoo.com)  
-[duckduckgo](duckduckgo.com)  
+[google](google.com)
+[yahoo](yahoo.com)
+[duckduckgo](duckduckgo.com)
 
