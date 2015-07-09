@@ -1,7 +1,9 @@
+<!--
 [title] Test Article
 [description] This is a really cool test article!
 [abstract] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. *Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit*. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
-[date] 4 July, 2015
+[date] 2015-Jul-05
+-->
 
 Title of the Article
 ====================

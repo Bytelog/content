@@ -25,9 +25,7 @@
 
 ### Thoughts on Rust
 
+### Setting up a minimalistic, secure debian web server
 
-
-
-Fonts thoughts  
-https://blog.algolia.com/when-solid-state-drives-are-not-that-solid/
+### Setting up a minimalistic, secure FreeBSD web server
 

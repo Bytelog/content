@@ -14,7 +14,6 @@ Web Browser: {{ browser }}
 Operating System: {{ os }}
 Referred By: {{ referer }}
 Cookies: {{ cookies }}
-Geolocation: {{ location }}
 ```
 
 If these fields are non-informational, congratulations - you've limited what information your browser sends to the websites you visit. Otherise, don't panic! I don't keep any of it. You should, though, be aware of what information you're sharing each time you visit a website.
