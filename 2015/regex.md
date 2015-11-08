@@ -96,7 +96,7 @@ There's definitely a few things to talk about here. First of all, you may notice
 
 I've placed the colon outside of the prefix grouping. This is to not accidentally mistake the colon as being a part of the prefix.
 
-If you aren't familiar with PCRE, you may be thrown off by the ?P<name> syntax. This is a named capture, and in most engines it will allow me to reference the captured content via a dictionary such as captures["prefix"] after the regex has been run against my message. You'll notice that I've suffixed each of my named captures with "TODO". This is a reminder to myself that I have not completed this component of the regex and need to return to it later.
+If you aren't familiar with PCRE, you may be thrown off by the ?P&lt;name&gt; syntax. This is a named capture, and in most engines it will allow me to reference the captured content via a dictionary such as captures["prefix"] after the regex has been run against my message. You'll notice that I've suffixed each of my named captures with "TODO". This is a reminder to myself that I have not completed this component of the regex and need to return to it later.
 
 Finally, for prefix and params we end with a ? to designate that there can be either zero, or one those groups. The literal space character is only included after prefix and not after the other components simply because that's what the specification calls for.
 
@@ -119,7 +119,7 @@ Well that's simple. * means variable repetition of the form m*nRule, where the m
   ([a-z]+)
 )
 ````
-Here we use the {} quantifier to specify that we'd like a exactly 3 digits. Then an OR | is used to supply another pattern in the event that the first is not matched. Our other pattern is simply one or more elements of the set of all English letters. Remember, we're case insensitive.
+Here we use the { } quantifier to specify that we'd like a exactly 3 digits. Then an OR | is used to supply another pattern in the event that the first is not matched. Our other pattern is simply one or more elements of the set of all English letters. Remember, we're case insensitive.
 
 And that's it. Let's add that back to our original expression of a message:
 
