@@ -81,7 +81,7 @@ The first step to realizing a regular expression is splitting the pattern you'd 
 ````
 message    =  [ ":" prefix SPACE ] command [ params ] crlf
 ````
-This means that a message *may* start with prefix, *must* then be followed by a command, *may* have parameters, and then *must* have a line ending. The brackets [ ] in BNF specify that something is optional.
+This means that a message *may* start with prefix, *must* then be followed by a command, *may* have parameters, and then *must* have a line ending. The brackets `[ ]` in BNF specify that something is optional.
 
 Converting that much into a regex pattern is easy:
 
@@ -92,13 +92,13 @@ Converting that much into a regex pattern is easy:
 (?P<paramsTODO>)?
 $
 ````
-There's definitely a few things to talk about here. First of all, you may notice that I've chosen to split my regex into multiple lines. I can do this if I specify the 'x' parameter in my regular expression, which says that newline characters will be ignored. I will also be using the 'i' parameter, which makes the regular expression case insensitive. We begin the regex with ^ and end with $, and make the assumption that we will only be parsing a *single* line at a time. This means that the input stream will need to be split by new line characters before being fed into the regex engine.
+There's definitely a few things to talk about here. First of all, you may notice that I've chosen to split my regex into multiple lines. I can do this if I specify the `x` parameter in my regular expression, which says that newline characters will be ignored. I will also be using the `i` parameter, which makes the regular expression case insensitive. We begin the regex with `^` and end with `$`, and make the assumption that we will only be parsing a *single* line at a time. This means that the input stream will need to be split by new line characters before being fed into the regex engine.
 
 I've placed the colon outside of the prefix grouping. This is to not accidentally mistake the colon as being a part of the prefix.
 
-If you aren't familiar with PCRE, you may be thrown off by the ?P&lt;name&gt; syntax. This is a named capture, and in most engines it will allow me to reference the captured content via a dictionary such as captures["prefix"] after the regex has been run against my message. You'll notice that I've suffixed each of my named captures with "TODO". This is a reminder to myself that I have not completed this component of the regex and need to return to it later.
+If you aren't familiar with PCRE, you may be thrown off by the `(?P<name>)` syntax. This is a named capture, and in most engines it will allow me to reference the captured content via a dictionary such as `captures["prefix"]` after the regex has been run against my message. You'll notice that I've suffixed each of my named captures with "TODO". This is a reminder to myself that I have not completed this component of the regex and need to return to it later.
 
-Finally, for prefix and params we end with a ? to designate that there can be either zero, or one those groups. The literal space character is only included after prefix and not after the other components simply because that's what the specification calls for.
+Finally, for prefix and params we end with a `?` to designate that there can be either zero, or one those groups. The literal space character is only included after prefix and not after the other components simply because that's what the specification calls for.
 
 Peeking at the BNF, the command component is by far the most trivial, and so it will be the first that we attempt to implement.
 
@@ -110,7 +110,7 @@ Let's see the command component of the BNF:
 command    =  1*letter / 3digit
 ````
 
-Well that's simple. * means variable repetition of the form m*nRule, where the m is the minimum number of elements, n is the maximum, and Rule is the definition of the elements. / Simply means "or". This means a command is either a string of letters, or precisely 3 digits. Let's go to the regex:
+Well that's simple. `*` means variable repetition of the form m*nRule, where the m is the minimum number of elements, n is the maximum, and Rule is the definition of the elements. `/` means "or". This means a command is either a string of letters, or precisely 3 digits. Let's go to the regex:
 
 ````
 (?P<command>
@@ -119,7 +119,7 @@ Well that's simple. * means variable repetition of the form m*nRule, where the m
   ([a-z]+)
 )
 ````
-Here we use the { } quantifier to specify that we'd like a exactly 3 digits. Then an OR | is used to supply another pattern in the event that the first is not matched. Our other pattern is simply one or more elements of the set of all English letters. Remember, we're case insensitive.
+Here we use the `{ }` quantifier to specify that we'd like a exactly 3 digits. Then an OR `|` is used to supply another pattern in the event that the first is not matched. Our other pattern is one or more elements of the set of all English letters. Remember, we're case insensitive.
 
 And that's it. Let's add that back to our original expression of a message:
 
