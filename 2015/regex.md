@@ -1,3 +1,13 @@
+Title: Tackling Regex
+Category: Tutorials
+Date: 2015
+Keywords:
+Description:
+Template: YourMom
+
+
+
+
 # Tackling Regex
 
 I really enjoy creating regular expressions. They allow you to build a complex parser which does exactly what you want in minutes. Despite this, others often find building regular expressions to be difficult even when they're familiar with the syntax and rules. I recently designed a regular expression to match IRC messages as defined in section 2.3.1 of [RFC 2812 - IRC: Client Protocol](http://tools.ietf.org/html/rfc2812). The specification for the message format is provided in an Augmented BNF format (Don't worry, you don't need to know BNF). I'd like to explain the process of converting the spec into a working regular expression and putting it into use.
